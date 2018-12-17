@@ -1,4 +1,4 @@
-
+﻿
 1. 这里在Idea下使用Maven插件mybatis generator来生成
    pojo实体类, dao接口, 以及mapper映射的xml文件
 
@@ -13,6 +13,12 @@
     2. 在生成的mapper/*.xml文件中,请将实体类的值改为全包名下的/或者直接写实体类的
     如在UsersMapper.xml文件中, 将含有"pojo.Users"的**type属性值改为"com.pjqdyd.pojo.Bgm"/或"Bgm",
     否则在使用mybatis时会报错找不到实体类**.pojo.Bgm)
+
+    3. 在使用mybatis时, 如果报错出现无法创建bean/class/sqlSesssionFactor,或者是提示
+        Mapped Statements collection already contains value for com.pjqdyd.dao.UserMapper.updateByPrimaryKey,
+        可能是因为生成的UsersMapper.xml文件里的映射sql操作的语句标签重复生成了, 删除id=updateByPrimaryKey的标签
+        块就行了.
+        (可能是插件的bug)
 
 
 
