@@ -7,6 +7,10 @@
 
 3. 这些文件就可以拷贝到项目中使用了
 
+   (!!!注意: 在生成的mapper/*.xml文件中,请将实体类的值改为全包名下的/或者直接写实体类的
+    如在UsersMapper.xml文件中, 将含有"pojo.Users"的**type属性值改为"com.pjqdyd.pojo.Users"/或"Users",
+    否则在使用mybatis时会报错找不到实体类pojo.Users)
+
 
 
 
