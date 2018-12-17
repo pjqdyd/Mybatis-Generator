@@ -26,7 +26,7 @@
         </javaTypeResolver>
 
         <!-- 数据表对应的pojo实体类层  -->
-        <javaModelGenerator targetPackage="pojo" targetProject="src/main/java/com/demo">
+        <javaModelGenerator targetPackage="com/pjqdyd/pojo" targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
@@ -37,12 +37,12 @@
         </sqlMapGenerator>
 
         <!-- mybatis3中的mapper接口 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="dao"  targetProject="src/main/java/com/demo">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com/pjqdyd/dao"  targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
         <!-- 数据表进行生成操作 schema:相当于库名; tableName:表名; domainObjectName:对应的pojo实体类名 -->
-        <table schema="video" tableName="users" domainObjectName="Users"
+        <table schema="video" tableName="bgm" domainObjectName="Bgm"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
