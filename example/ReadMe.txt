@@ -1,0 +1,30 @@
+
+1. 这里在Idea下使用Maven插件mybatis generator来生成
+   pojo实体类, dao接口, 以及mapper映射的xml文件
+
+2. 完成相关配置后, 且配置好要生成的表名后, 双击运行maven插件mybatis-genetor:generate
+   就可以生成对应的文件了
+
+3. 这些文件就可以拷贝到项目中使用了
+
+
+
+
+
+
+
+
+(在连接数据库时可能会有错误)
+1. mysql 8以上版本的加密用了sha2算法:
+    报错caching-sha2-password
+
+解决办法: https://blog.csdn.net/u010026255/article/details/80062153
+
+2. 连接mysql时报错: Unknown system variable 'query_cache_size'
+
+  解决办法: https://www.cnblogs.com/nicknailo/articles/9074804.html
+原因是mysql-connector-java的版本还是6.0.6，需要升级版本到8.0.11 ，这个报错就不存在了
+
+3. mysql的时区配置不正确: The server time zone value....
+
+解决办法: https://blog.csdn.net/weixin_39033443/article/details/81711306
