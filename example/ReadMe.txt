@@ -41,3 +41,6 @@
 3. mysql的时区配置不正确: The server time zone value....
 
 解决办法: https://blog.csdn.net/weixin_39033443/article/details/81711306
+Mysql 8 的版本可以: 
+在连接数据库的配置上加上参数 ?serverTimezone=GMT%2B8
+如: jdbc:mysql://localhost:3306/video?characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSL=false
