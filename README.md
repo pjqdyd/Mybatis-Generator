@@ -23,7 +23,7 @@
         Mapped Statements collection already contains value for com.pjqdyd.dao.UserMapper.updateByPrimaryKey,
         可能是因为生成的UserMapper.xml文件里的映射sql操作的语句标签重复生成了, 删除id=updateByPrimaryKey等有重复的标签
         块就行了.
-        (可能是多次点击了插件运行生成)
+       可能是多次点击了插件运行生成)
 
 
 ```
